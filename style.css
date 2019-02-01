@@ -1,0 +1,186 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container, .nav-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainpage {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+}
+
+
+/* Navigation & Footer */
+
+nav, footer {
+    background-color: #111;
+    opacity: 0.9;
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav-container > ul, footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul a, ul a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+li img {
+    height: 20px;
+    width: auto;
+}
+
+ul li a:hover {
+    background-color: #111;
+}
+
+.nav-container ul li:last-of-type {
+    margin-left: auto;
+}
+
+footer ul li#copy {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+
+/* Buttons */
+
+a.btn {
+    font-size: 150%;
+    color: #fff;
+    background-color: #165882;
+    text-decoration: none;
+    padding: 20px 15px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+a.btn.btn-sign {
+    background-color: #e99002;
+}
+
+
+/* Main Page */
+
+header, main {
+    background-color: #1e93cc;
+    color: #fff;
+}
+
+figure#logo-header img {
+    width: 300px;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+h1 {
+    margin: 30px auto;
+}
+
+h1, h2 {
+    font-weight: 300;
+}
+
+h2.faded {
+    opacity: 0.9;
+}
+
+.container.grid section {
+    margin: 20px 0;
+    opacity: 0.9;
+}
+
+section p {
+    margin: 20px 0;
+}
+
+section.partners {
+    background-color: #eee;
+}
+
+.partners .container, .btns .container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container a img {
+    height: 50px;
+    padding: 0 30px;
+    margin: 50px 0;
+}
+
+.btns {
+    margin-bottom: 50px;
+}
+
+.btns .container a {
+    width: 200px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+
+/* Grid */
+
+.container.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "one two"
+        "three four";
+    grid-gap: 15px;
+}
+
+section.one {
+    grid-area: one;
+}
+
+section.two {
+    grid-area: two;
+}
+
+section.three {
+    grid-area: three;
+}
+
+section.four {
+    grid-area: four;
+}
