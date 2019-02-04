@@ -52,6 +52,13 @@ nav, footer {
 ul a, ul a:visited {
     color: #fff;
     text-decoration: none;
+    opacity: 0.9;
+}
+
+.nav-container ul a:hover, footer ul li a:hover {
+    opacity: 1;
+    background-color: rgba(1,1,1,1);
+    transition-duration: 500ms;
 }
 
 li img {
