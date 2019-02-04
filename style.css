@@ -109,6 +109,13 @@ figure#logo-header img {
     height: auto;
 }
 
+figure#guy img {
+    position: absolute;
+    left: 50px;
+    margin: 30px;
+    max-width: 210px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
